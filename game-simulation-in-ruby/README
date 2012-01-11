@@ -1,0 +1,78 @@
+Let us build a game. Consider a simple X,Y grid, say of 10 X 10, left
+bottom at 0,0 and right top at 10,10. There are various animals in
+this grid.
+
+All animals can only move along whole units of X and Y, ie, they can,
+for e.g., move from 1,1 to 1,2 but not to 1.4, 1.7 etc.
+
+The animals are:
+
+Worms
+Grass-hoppers
+Frogs
+Snakes and Bull frogs.
+
+There is an inherent food chain here:
+
+Grass-hoppers eat worms.
+Frogs eat grass-hoppers.
+Snakes eat frogs and grass-hoppers.
+Bull frogs are massive frogs: they eat snakes and other small frogs.
+No species feeds on itself.
+
+Animals, obviously move in various ways.
+Worms can only move in units of 1. for e.g., from 1,1 to 1,2, from
+2,3 to 2,4 etc.. ie one unit in either X or Y direction.
+Grass -hoppers skip one unit in any one direction. For e.g., if a
+grass hopper is at 3,2 facing EAST, it can jump to 3,4 (It skipped
+3,3).
+
+Frogs skip two units
+Snakes move like worms, they can move one unit at a time.
+Bull frogs jump like ordinary frogs. They too skip two units.
+Assume all animals are of 0 length and width, i.e they occupy a
+coordinate alone, and do not have any length.
+
+All animals have an initial direction, N,S,E or west.
+When given a chance to move, they can either turn their direction,
+or move ahead in their current direction, but not both.
+If they are about to hit or exceed the grid boundary, then,
+instead of moving, they must obviously turn left, right or reverse
+direction. for e.g., a frog at 0,9(N), will, on its next movement,
+will either turn left or right, or reverse direction.
+
+So, at the start of the game, you are given the coordinates and
+facing-direction of each animal. Each animal moves (or changes
+direction) once per second from start of game.
+
+For e.g. at time = 0, all are at their initial coordinates at time
+= 1, a frog at 1,2(E) moves to 3,2(E), a snake at 5,5(N) moves to
+5,6(N), a worm at 0,9N moves to 0,10N, At at any time pulse, if
+predators and preys converge on the same spot, the predators kill the
+prey.
+
+A predator will kill only one prey. For e.g., if there are two
+worms and 3 frogs on a given coordinate, 2 frogs will eat two worms.
+Assume the legend:
+
+G1-2E
+==> grass hopper at 1,2 facing East.
+
+Sample Program input:
+
+S4-5S, G4-3N, G1-2E, G5-6W, S4-5S, G4-3N, B9-9W, B7-3N, B7-3,W etc.
+
+Program Output is:
+
+At next time pulse, S4,5S will be at S4,4S and G4,3N will be at G4,4N
+and therefore G gets eaten.
+
+The game basically plots what happens to all these animals as time
+passes by. If one were to plot this on a canvas, as time passes one
+could see all animals moving around randomly and getting eaten by
+others.
+
+Your task is to write a program to simulate the above.The program
+should essentially give out locations and directions of each animal
+every second.*
+
