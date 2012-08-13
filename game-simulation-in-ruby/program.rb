@@ -180,61 +180,61 @@ while objlist.length>1
 				puts "########## #{name1}  meets  #{name2} ###########"
 						
 				
-				if name1 == "GrassHoper" and name2 == "Worm":
+				if name1 == "GrassHoper" and name2 == "Worm"
 							objlist.delete(W1)
 							obj.eat(name2)
 							break
 						
-				elsif name1 == "Worm" and name2 == "GrassHoper":
+				elsif name1 == "Worm" and name2 == "GrassHoper"
 							objlist.delete(W1)
 							obj.eat(name1)
 							break
 						
-				elsif name1 == "Frog" and name2 == "GrassHoper":
+				elsif name1 == "Frog" and name2 == "GrassHoper"
 							objlist.delete(G1)
 							obj.eat(name2)
 							break
 						
-				elsif name1 == "GrassHoper" and name2 == "Frog":
+				elsif name1 == "GrassHoper" and name2 == "Frog"
 							objlist.delete(G1)
 							obj.eat(name1)
 							break
-				elsif name1 == "Snake" and  name2 == "Frog":
+				elsif name1 == "Snake" and  name2 == "Frog"
 							objlist.delete(F1)
 							obj.eat(name2)							
 							break
 						
-				elsif name1 == "Frog" and name2 == "Snake":
+				elsif name1 == "Frog" and name2 == "Snake"
 							objlist.delete(F1)
 							obj.eat(name1)							
 							break
 
-				elsif name1 == "Snake" and name2 == "GrassHoper":
+				elsif name1 == "Snake" and name2 == "GrassHoper"
 							objlist.delete(G1)
 							obj.eat(name2)							
 							break
 						
-				elsif name1 == "GrassHoper"  and name2 == "Snake":
+				elsif name1 == "GrassHoper"  and name2 == "Snake"
 							objlist.delete(G1)
 							obj.eat(name1)							
 							break
 
-				elsif name1 == "BullFrog" and name2 == "Frog":
+				elsif name1 == "BullFrog" and name2 == "Frog"
 							objlist.delete(F1)
 							obj.eat(name2)							
 							break
 
-				elsif name1 == "Frog" and name2 == "BullFrog":
+				elsif name1 == "Frog" and name2 == "BullFrog"
 							objlist.delete(F1)
 							obj.eat(name1)							
 							break
 
-				elsif name1 == "BullFrog" and name2 == "Snake":
+				elsif name1 == "BullFrog" and name2 == "Snake"
 							objlist.delete(S1)
 							obj.eat(name2)
 							break
 						
-				elsif name1 == "Snake" and name2 == "BullFrog":
+				elsif name1 == "Snake" and name2 == "BullFrog"
 							objlist.delete(S1)
 							obj.eat(name1)
 							break
