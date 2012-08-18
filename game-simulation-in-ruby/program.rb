@@ -1,4 +1,3 @@
-
 class Animals
     attr_accessor :name
     attr_accessor :position
@@ -80,75 +79,22 @@ end
    
 class Worm < Animals
 
-     def initialize( name, direction, position )
-          super( name,direction,position )
-     end
-     def move
-       self.class.superclass.instance_method(:move).bind(self).call
-     end
-     def eat(name)
-       self.class.superclass.instance_method(:eat).bind(self).call(name)
-     end
-     
 end
 
 class GrassHoper < Animals
 
-     def initialize( name, direction, position )
-          super( name,direction,position )
-     end
-     def move
-       self.class.superclass.instance_method(:jumb).bind(self).call
-     end 
-     def eat(name)
-       self.class.superclass.instance_method(:eat).bind(self).call(name)
-     end
-     
-     
 end
 
 class Frog < Animals
 
-     def initialize( name, direction, position )
-          super( name,direction,position )
-     end
-     def move
-       self.class.superclass.instance_method(:jumb).bind(self).call
-     end 
-     def eat(name)
-       self.class.superclass.instance_method(:eat).bind(self).call(name)
-     end
-     
-    
 end
 
 class Snake < Animals
-
-     def initialize( name, direction, position )
-          super( name,direction,position )
-     end
-     def move
-       self.class.superclass.instance_method(:move).bind(self).call
-     end 
-     def eat(name)
-       self.class.superclass.instance_method(:eat).bind(self).call(name)
-     end
      
 end
 
 class BullFrog < Animals
 
-     def initialize( name, direction, position )
-          super( name,direction,position )
-     end
-     def move
-       self.class.superclass.instance_method(:jumb).bind(self).call
-     end 
-    def eat(name)
-       self.class.superclass.instance_method(:eat).bind(self).call(name)
-    end
-     
-    
 end
 
 W1=Worm.new("Worm","N",[1,1])
